@@ -3,7 +3,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 class LinkFlexibleSpaceBar extends StatefulWidget {
-
   const LinkFlexibleSpaceBar({
     Key key,
     this.title,
@@ -33,7 +32,6 @@ class LinkFlexibleSpaceBar extends StatefulWidget {
 
   final EdgeInsetsGeometry titlePadding;
 
-
   @override
   _LinkFlexibleSpaceBarState createState() => _LinkFlexibleSpaceBarState();
 }
@@ -48,8 +46,9 @@ class _LinkFlexibleSpaceBarState extends State<LinkFlexibleSpaceBar> {
         return false;
       case TargetPlatform.iOS:
         return true;
+      default:
+        return null;
     }
-    return null;
   }
 
   Alignment _getTitleAlignment(bool effectiveCenterTitle) {
@@ -137,8 +136,8 @@ class _LinkFlexibleSpaceBarState extends State<LinkFlexibleSpaceBar> {
                       color: Colors.transparent,
                     ),
                     filter: ui.ImageFilter.blur(
-                      sigmaX: blurAmount,
-                      sigmaY: blurAmount,
+                      sigmaX: blurAmount ?? 0,
+                      sigmaY: blurAmount ?? 0,
                     ))));
           }
         }
@@ -153,8 +152,7 @@ class _LinkFlexibleSpaceBarState extends State<LinkFlexibleSpaceBar> {
           case TargetPlatform.iOS:
             title = widget.title;
             break;
-          case TargetPlatform.fuchsia:
-          case TargetPlatform.android:
+          default:
             title = Semantics(
               namesRoute: true,
               child: widget.title,
@@ -175,7 +173,7 @@ class _LinkFlexibleSpaceBarState extends State<LinkFlexibleSpaceBar> {
 
         final double opacity = settings.toolbarOpacity;
         if (opacity > 0.0) {
-          TextStyle titleStyle = theme.primaryTextTheme.title;
+          TextStyle titleStyle = theme.primaryTextTheme.headline6;
           titleStyle =
               titleStyle.copyWith(color: titleStyle.color.withOpacity(opacity));
           final bool effectiveCenterTitle = _getEffectiveCenterTitle(theme);
@@ -198,11 +196,6 @@ class _LinkFlexibleSpaceBarState extends State<LinkFlexibleSpaceBar> {
 
           final Alignment titleAlignment =
               _getTitleAlignment(effectiveCenterTitle);
-
-          double statusBarHeight =
-              MediaQueryData.fromWindow(WidgetsBinding.instance.window)
-                  .padding
-                  .top;
 
           children.add(
             Container(

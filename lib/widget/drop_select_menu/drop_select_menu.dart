@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:ui' as ui show Image, ImageFilter;
+import 'dart:ui' as ui show ImageFilter;
 import 'package:flutter/material.dart';
 
 import 'drop_select_controller.dart';
@@ -171,8 +171,8 @@ class _DropSelectMenuState extends DropSelectState<DropSelectMenu>
 
     container = new BackdropFilter(
         filter: new ui.ImageFilter.blur(
-          sigmaY: widget.blur,
-          sigmaX: widget.blur,
+          sigmaY: widget.blur ?? 0,
+          sigmaX: widget.blur ?? 0,
         ),
         child: container);
 
