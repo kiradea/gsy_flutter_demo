@@ -10,6 +10,7 @@ import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/scroll_inner_content_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/align_demo_page.dart';
@@ -64,13 +65,15 @@ import 'package:gsy_flutter_demo/widget/transform_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/verification_code_input_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/viewpager_demo_page.dart';
 
+import 'package:gsy_flutter_demo/widget/new_clip_demo_page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print("######## ${ Cat.black.name}");
+    print("######## ${Cat.black.name}");
     return MaterialApp(
       title: 'GSY Flutter Demo',
       theme: ThemeData(
@@ -127,8 +130,14 @@ Map<String, WidgetBuilder> routers = {
   "文本输入框简单的 Controller": (context) {
     return new ControllerDemoPage();
   },
+  "Lawlite 文本输入框简单的Controller": (context) {
+    return new NewControllerDemoPage();
+  },
   "实现控件圆角不同组合": (context) {
     return new ClipDemoPage();
+  },
+  "Lawlite 实现控件圆角不同组合": (context) {
+    return new NewClipDemoPage();
   },
   "列表滑动监听": (context) {
     return new ScrollListenerDemoPage();
@@ -318,11 +327,7 @@ Map<String, WidgetBuilder> routers = {
   },
 };
 
-
-enum Cat {
-  black,
-  white
-}
+enum Cat { black, white }
 
 extension CatExtension on Cat {
   String get name {
