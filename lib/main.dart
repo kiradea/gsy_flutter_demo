@@ -66,6 +66,8 @@ import 'package:gsy_flutter_demo/widget/verification_code_input_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/viewpager_demo_page.dart';
 
 import 'package:gsy_flutter_demo/widget/new_clip_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_scroll_listener_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_scroll_index_demo_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -142,8 +144,14 @@ Map<String, WidgetBuilder> routers = {
   "列表滑动监听": (context) {
     return new ScrollListenerDemoPage();
   },
+  "Lawlite 列表滑动监听": (context) {
+    return new NewScrollListenerDemoPage();
+  },
   "滑动到指定位置": (context) {
     return new ScrollToIndexDemoPage();
+  },
+  "Lawlite 滑动到指定位置": (context) {
+    return new NewScrollIndexDemoPage();
   },
   "滑动到指定位置2": (context) {
     return new ScrollToIndexDemoPage2();
