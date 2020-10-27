@@ -77,3 +77,4 @@ ios/Flutter/.last_build_id
 ios/Flutter/Flutter.podspec
 pubspec.lock
 ios/Runner.xcodeproj/project.pbxproj
+ios/Flutter/flutter_export_environment.sh
