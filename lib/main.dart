@@ -68,6 +68,7 @@ import 'package:gsy_flutter_demo/widget/viewpager_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_clip_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_scroll_listener_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_scroll_index_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_transform_demo_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -158,6 +159,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "Transform 效果展示": (context) {
     return new TransformDemoPage();
+  },
+  "Lawlite Transform 效果展示": (context) {
+    return new NewTransformDemoPage();
   },
   "计算另类文本行间距展示": (context) {
     return new TextLineHeightDemoPage();
