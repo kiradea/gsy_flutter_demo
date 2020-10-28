@@ -70,6 +70,9 @@ import 'package:gsy_flutter_demo/widget/new_scroll_listener_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_scroll_index_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_transform_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_text_line_height_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_refresh_demo_page.dart';
+
+import 'widget/new_refresh_demo_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -172,6 +175,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "简单上下刷新": (context) {
     return new RefreshDemoPage();
+  },
+  "Lawlite 简单上下刷新": (context) {
+    return new NewRefreshDemoPage();
   },
   "简单上下刷新2": (context) {
     return new RefreshDemoPage2();

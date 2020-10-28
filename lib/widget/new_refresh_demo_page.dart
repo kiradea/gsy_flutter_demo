@@ -78,7 +78,27 @@ class _NewRefrshDemoPageState extends State<NewRefreshDemoPage> {
           onRefresh: onRefresh,
           child: new ListView.builder(
             physics: const AlwaysScrollableScrollPhysics(),
-            itemBuilder: (context),
+            itemBuilder: (context, index) {
+              if (index == dataList.length) {
+                return new Container(
+                  margin: EdgeInsets.all(10),
+                  child: Align(
+                    child: CircularProgressIndicator(),
+                  ),
+                );
+              }
+              return Card(
+                child: new Container(
+                  height: 60,
+                  alignment: Alignment.centerLeft,
+                  child: new Text("Item ${dataList[index]} $index"),
+                ),
+              );
+            },
+            itemCount: (dataList.length >= pageSize)
+                ? dataList.length + 1
+                : dataList.length,
+            controller: _scrollController,
           ),
         ),
       ),
