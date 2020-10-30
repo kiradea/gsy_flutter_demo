@@ -72,7 +72,7 @@ import 'package:gsy_flutter_demo/widget/new_transform_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_text_line_height_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_refresh_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_refresh_demo_page2.dart';
-import 'widget/new_refresh_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_refresh_demo_page3.dart';
 
 void main() => runApp(MyApp());
 
@@ -187,6 +187,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "简单上下刷新3": (context) {
     return new RefreshDemoPage3();
+  },
+  "Lawlite 简单上下刷新3": (context) {
+    return new NewRefreshDemoPage3();
   },
   "通过绝对定位布局": (context) {
     return new PositionedDemoPage();
