@@ -5,6 +5,7 @@ import 'package:gsy_flutter_demo/widget/anim_progress_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/anim_scan_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/arc_seek_bar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/bottom_anim_nav_page.dart';
+import 'package:gsy_flutter_demo/widget/bubble/new_bubble_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/canvas_click_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
@@ -200,6 +201,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "气泡提示框": (context) {
     return new BubbleDemoPage();
+  },
+  "Lawlite 气泡提示框": (context) {
+    return new NewBubbleDemoPage();
   },
   "Tag效果展示": (context) {
     return new TagDemoPage();
