@@ -11,6 +11,7 @@ import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/scroll_inner_content_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/align_demo_page.dart';
@@ -193,6 +194,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "通过绝对定位布局": (context) {
     return new PositionedDemoPage();
+  },
+  "Lawlite 通过绝对定位布局": (context) {
+    return new NewPositionedDemoPage();
   },
   "气泡提示框": (context) {
     return new BubbleDemoPage();
