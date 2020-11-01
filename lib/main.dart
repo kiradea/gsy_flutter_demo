@@ -12,7 +12,9 @@ import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_tag_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/scroll_inner_content_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/align_demo_page.dart';
@@ -208,8 +210,14 @@ Map<String, WidgetBuilder> routers = {
   "Tag效果展示": (context) {
     return new TagDemoPage();
   },
+  "Lawlite Tag效果展示": (context) {
+    return new NewTagDemoPage();
+  },
   "共享元素跳转效果": (context) {
     return new HonorDemoPage();
+  },
+  "Lawlite 共享元素跳转效果": (context) {
+    return new NewHonorDemoPage();
   },
   "状态栏颜色修改（仅 App）": (context) {
     return new StatusBarDemoPage();

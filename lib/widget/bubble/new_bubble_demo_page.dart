@@ -1,8 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-// import 'package:gsy_flutter_demo/widget/bubble/bubble_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/bubble/bubble_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/bubble/bubble_painter.dart';
+import 'package:gsy_flutter_demo/widget/bubble/bubble_tip_widget.dart';
 
 class NewBubbleDemoPage extends StatelessWidget {
   final double bubbleHeight = 60;
@@ -152,11 +153,37 @@ class NewBubbleDialog extends StatelessWidget {
     this.y = 0,
   });
 
+  confirm(context) {
+    Navigator.of(context).pop();
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.transparent,
+      body: new InkWell(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        onTap: () {
+          confirm(context);
+        },
+        child: Container(
+          alignment: Alignment.centerLeft,
+          child: BubbleTipWidget(
+            arrowLocation: arrowLocation,
+            width: width,
+            height: height,
+            radius: radious,
+            x: x,
+            y: y,
+            text: text,
+            voidCallback: () {
+              confirm(context);
+            },
+          ),
+        ),
+      ),
     );
   }
 }
