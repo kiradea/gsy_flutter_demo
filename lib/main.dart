@@ -11,8 +11,11 @@ import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_anima_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_anima_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_keyboard_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_statusbar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_tag_demo_page.dart';
@@ -229,11 +232,20 @@ Map<String, WidgetBuilder> routers = {
   "键盘弹出与监听（仅 App）": (context) {
     return new KeyBoardDemoPage();
   },
+  "Lawlite 键盘弹出与监听": (context) {
+    return new NewKeyBoardDemoPage();
+  },
   "控件动画组合展示（旋转加放大圆）": (context) {
     return new AnimaDemoPage();
   },
+  "Lawlite 控件动画组合展示": (context) {
+    return new NewAnimaDemoPage();
+  },
   "控件展开动画效果": (context) {
     return new AnimaDemoPage2();
+  },
+  "Lawlite 控件展开动画效果": (context) {
+    return new NewAnimaDemoPage2();
   },
   "全局悬浮按键效果": (context) {
     return new FloatingTouchDemoPage();
