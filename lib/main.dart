@@ -14,6 +14,7 @@ import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_statusbar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_tag_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/scroll_inner_content_demo_page.dart';
@@ -221,6 +222,9 @@ Map<String, WidgetBuilder> routers = {
   },
   "状态栏颜色修改（仅 App）": (context) {
     return new StatusBarDemoPage();
+  },
+  "Lawlite 状态栏颜色修改（仅App)": (context) {
+    return new NewStatusBarDemoPage();
   },
   "键盘弹出与监听（仅 App）": (context) {
     return new KeyBoardDemoPage();
