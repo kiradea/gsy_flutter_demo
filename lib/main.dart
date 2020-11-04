@@ -14,11 +14,16 @@ import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_floating_touch_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_keyboard_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/new_statusbar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_tag_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_text_size_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_viewpager_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/rich_text_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/scroll_inner_content_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/align_demo_page.dart';
@@ -250,17 +255,32 @@ Map<String, WidgetBuilder> routers = {
   "全局悬浮按键效果": (context) {
     return new FloatingTouchDemoPage();
   },
+  "Lawlite 全局悬浮按钮效果": (context) {
+    return NewFloatingTouchDemoPage();
+  },
   "全局设置字体大小": (context) {
     return new TextSizeDemoPage();
+  },
+  "Lawlite 全局设置字体大小": (context) {
+    return new NewTextSizeDemoPage();
   },
   "旧版实现富文本": (context) {
     return new RichTextDemoPage();
   },
+  "Lawlite 旧版实现富文本": (context) {
+    return new NewRichTextDemoPage();
+  },
   "官方实现富文本": (context) {
     return new RichTextDemoPage2();
   },
+  "Lawlite 官方实现富文本": (context) {
+    return new NewRichTextDemoPage2();
+  },
   "第三方 viewpager 封装实现": (context) {
     return new ViewPagerDemoPage();
+  },
+  "Lawlite 第三方 viewpager 封装实现": (context) {
+    return new NewViewPagerDemoPage();
   },
   "列表滑动过程控件停靠效果": (context) {
     return new SliverListDemoPage();
