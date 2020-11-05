@@ -14,12 +14,14 @@ import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_custom_multi_render_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_floating_touch_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_keyboard_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page2.dart';
+import 'package:gsy_flutter_demo/widget/new_sliver_list_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_statusbar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_tag_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_text_size_demo_page.dart';
@@ -285,11 +287,17 @@ Map<String, WidgetBuilder> routers = {
   "列表滑动过程控件停靠效果": (context) {
     return new SliverListDemoPage();
   },
+  "Lawlite 列表滑动过程控件停靠效果": (context) {
+    return new NewSliverListDemoPage();
+  },
   "验证码输入框": (context) {
     return new VerificationCodeInputDemoPage();
   },
   "自定义布局展示效果": (context) {
     return new CustomMultiRenderDemoPage();
+  },
+  "Lawlite 自定义布局展示效果": (context) {
+    return new NewCustomMultiRenderDemoPage();
   },
   "自定义布局实现云词图展示": (context) {
     return new CloudDemoPage();
