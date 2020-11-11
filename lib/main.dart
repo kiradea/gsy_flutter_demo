@@ -7,6 +7,7 @@ import 'package:gsy_flutter_demo/widget/arc_seek_bar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/bottom_anim_nav_page.dart';
 import 'package:gsy_flutter_demo/widget/bubble/new_bubble_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/canvas_click_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/cloud/new_cloud_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
@@ -68,6 +69,7 @@ import 'package:gsy_flutter_demo/widget/sliver_tab_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/sliver_tab_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/sliver_tab/sliver_tab_demo_page3.dart';
 import 'package:gsy_flutter_demo/widget/statusbar_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/stick/new_stick_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/stick/stick_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/stick/stick_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/stick_sliver_list_demo_page.dart';
@@ -302,8 +304,14 @@ Map<String, WidgetBuilder> routers = {
   "自定义布局实现云词图展示": (context) {
     return new CloudDemoPage();
   },
+  "Lawlite 自定义布局实现云词图展示": (context) {
+    return new NewCloudDemoPage();
+  },
   "列表滑动停靠 （Stick）": (context) {
     return new StickDemoPage();
+  },
+  "Lawlite 列表滑动停靠 （stick）": (context) {
+    return new NewStickDemoPage();
   },
   "列表滑动停靠 （Stick）+ 展开收回": (context) {
     return new StickExpendDemoPage();
