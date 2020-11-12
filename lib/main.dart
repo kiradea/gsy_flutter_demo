@@ -11,6 +11,7 @@ import 'package:gsy_flutter_demo/widget/cloud/new_cloud_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
+import 'package:gsy_flutter_demo/widget/inherited_widget_test_route.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page2.dart';
@@ -70,6 +71,7 @@ import 'package:gsy_flutter_demo/widget/sliver_tab_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/sliver_tab/sliver_tab_demo_page3.dart';
 import 'package:gsy_flutter_demo/widget/statusbar_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/stick/new_stick_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/stick/new_stick_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/stick/stick_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/stick/stick_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/stick_sliver_list_demo_page.dart';
@@ -315,6 +317,12 @@ Map<String, WidgetBuilder> routers = {
   },
   "列表滑动停靠 （Stick）+ 展开收回": (context) {
     return new StickExpendDemoPage();
+  },
+  // "Lawlite 列表滑动靠停（Stick）+ 展开收回": (context) {
+  //   return new NewStickExpendDemoPage();
+  // },
+  "Lawlitew InheritedWiget": (context) {
+    return new InheritedWigetTestRoute();
   },
   "列表滑动停靠效果2 （Stick": (context) {
     return new SliverStickListDemoPage();
