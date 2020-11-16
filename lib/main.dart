@@ -13,13 +13,17 @@ import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/inherited_widget_test_route.dart';
 import 'package:gsy_flutter_demo/widget/link_sliver/link_sliver_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/link_sliver/new_link_sliver_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_align_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_anima_demo_page2.dart';
 import 'package:gsy_flutter_demo/widget/new_controller_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_custom_multi_render_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_floating_touch_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_honor_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_keyboard_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/new_overflow_image_page.dart';
 import 'package:gsy_flutter_demo/widget/new_positioned_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/new_rich_text_demo_page2.dart';
@@ -360,14 +364,23 @@ Map<String, WidgetBuilder> routers = {
   "点击弹出动画提示": (context) {
     return new AnimTipDemoPage();
   },
+  "Lawlite 点击弹出动画提示": (context) {
+    return new NewAnimaDemoPage();
+  },
   "列表停靠展开+回到当前头部": (context) {
     return new StickSliverListDemoPage();
   },
   "使用 overflow 处理图片": (context) {
     return new OverflowImagePage();
   },
+  "Lawlite 使用 overflow 处理图片": (context) {
+    return new NewOverflowImagePage();
+  },
   "展示 Align 排布控件": (context) {
     return new AlignDemoPage();
+  },
+  "Lawlite 展示 Align 排布控件": (context) {
+    return new NewAlignDemoPage();
   },
   "通过不同尺寸计算方式展示比例": (context) {
     return new CardItemPage();
@@ -426,8 +439,14 @@ Map<String, WidgetBuilder> routers = {
   "类似 boss 直聘我的页面联动效果": (context) {
     return new LinkSliverDemoPage();
   },
+  "Lawlite 类似 Boss ": (context) {
+    return new NewLinkSliverDemoPage();
+  },
   "结合 Matrix 的拖拽": (context) {
     return new DragImgDemoPage();
+  },
+  "Lawlite 结合 Matrix 的拖拽": (context) {
+    return new NewDragImgDemoPage();
   },
 };
 

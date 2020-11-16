@@ -13,8 +13,13 @@ class OverflowImagePage extends StatelessWidget {
         itemBuilder: (context, index) {
           ///第二个Item
           if (index == 1) {
+            return new Container(
+              color: Colors.black,
+              height: 100,
+            );
+          } else if (index == 2) {
             return Container(
-              color: Colors.blue,
+              color: Colors.red,
               height: MediaQuery.of(context).size.height,
             );
           }
