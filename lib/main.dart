@@ -84,6 +84,7 @@ import 'package:gsy_flutter_demo/widget/matrix_custom_painter_page.dart';
 import 'package:gsy_flutter_demo/widget/text_line_height_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/text_size_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/tick_click_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/tip_route.dart';
 import 'package:gsy_flutter_demo/widget/transform_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/verification_code_input_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/viewpager_demo_page.dart';
@@ -157,6 +158,9 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Map<String, WidgetBuilder> routers = {
+  "测试": (context) {
+    return RouterTestRoute();
+  },
   "文本输入框简单的 Controller": (context) {
     return new ControllerDemoPage();
   },
