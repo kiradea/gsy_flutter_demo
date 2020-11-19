@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gsy_flutter_demo/widget/Demo3-2.dart';
 import 'package:gsy_flutter_demo/widget/anim_bubble_gum.dart';
 import 'package:gsy_flutter_demo/widget/anim_button/anim_button_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/anim_progress_img_demo_page.dart';
@@ -158,6 +159,12 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Map<String, WidgetBuilder> routers = {
+  "3-2": (context) {
+    return ParentWidgetC();
+  },
+  "3-2 ": (context) {
+    return ParentWidget();
+  },
   "测试": (context) {
     return RouterTestRoute();
   },
