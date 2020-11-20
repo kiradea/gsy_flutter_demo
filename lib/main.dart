@@ -9,6 +9,8 @@ import 'package:gsy_flutter_demo/widget/bottom_anim_nav_page.dart';
 import 'package:gsy_flutter_demo/widget/bubble/new_bubble_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/canvas_click_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/cloud/new_cloud_demo_page.dart';
+import 'package:gsy_flutter_demo/widget/demo3_7.dart';
+import 'package:gsy_flutter_demo/widget/demo3_8.dart';
 import 'package:gsy_flutter_demo/widget/drag_img_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page.dart';
 import 'package:gsy_flutter_demo/widget/index_stack_drag_card_demo_page2.dart';
@@ -159,6 +161,21 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 Map<String, WidgetBuilder> routers = {
+  "3-8 2": (context) {
+    return ProgressRoute();
+  },
+  "3-8 1": (context) {
+    return Demo3_8();
+  },
+  "3-7 3": (context) {
+    return FormTestRoute();
+  },
+  "3-7 ": (context) {
+    return FocusTestRoute();
+  },
+  "3-7": (context) {
+    return Demo3_7();
+  },
   "3-2": (context) {
     return ParentWidgetC();
   },
